@@ -16,7 +16,6 @@ class ShopPage extends React.Component {
         return (
 
             <div>
-
                 {this.state.collections.map(({id, ...otherProperties}) => (
                     <CollectionPreview key={id} {...otherProperties}/>
                 ))}
