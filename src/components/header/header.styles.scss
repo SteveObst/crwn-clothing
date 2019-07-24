@@ -2,16 +2,32 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 70px;
+    height: 100 px;
     margin-bottom: 25px;
 
-
-    .logo-container {
+    .left-side {
+        display: flex;
         height: 100%;
-        width: 70px;
-        padding: 25px;
+        flex-direction: row;
+      
         
+       
+    
+
+        .logo-container {
+            width: 70px;
+            padding: 0 25px;
+            
+        }
+
+        .welcome {
+           
+            width: 100%;
+            padding: 10px 25px;
+          
+        }
     }
+  
 
     .options {
         height: 100%;

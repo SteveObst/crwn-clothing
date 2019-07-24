@@ -4,11 +4,18 @@ import './header.styles.scss';
 import { Link } from 'react-router-dom';
 import { auth } from '../../firebase/firebase.utils';
 
+
 const Header = ({currentUser}) => (
+   
     <div className='header'>
-        <Link className='logo-container' to="/">
-            <Logo className='logo' />
-        </Link>
+        <div className='left-side'>
+            <Link className='logo-container' to="/">
+                <Logo className='logo' />
+            </Link>
+            {
+                currentUser ? <div className='welcome'>{currentUser.displayName.toUpperCase()} is shopping...</div> : ''
+            }   
+        </div>
 
         <div className='options'>  
             
